@@ -22,7 +22,13 @@
 // タイムゾーンを東京標準に設定する
 // date_default_timezone_set('Asia/Tokyo');
 // print (time());
-print (date('n/j(D)', time() + 60 * 60 * 24));
+
+// 文字列で指定したものをタイムスタンプに変換する
+// strtotime('1543/1/31')
+// strtotime('+2day')
+
+// 今日の日付から＋2日する
+print (date('n/j(D)', strtotime('+2day')));
 ?>
 </pre>
 </main>
