@@ -19,6 +19,12 @@
 <h2>Practice</h2>
 <pre>
 <?php
+for ($i=1; $i<=365; $i++):
+  $date = strtotime('+' . $i . 'day');
+  print (date('n/j(D)' , $date));
+  print "\n";
+endfor;
+
 // タイムゾーンを東京標準に設定する
 // date_default_timezone_set('Asia/Tokyo');
 // print (time());
@@ -28,7 +34,7 @@
 // strtotime('+2day')
 
 // 今日の日付から＋2日する
-print (date('n/j(D)', strtotime('+2day')));
+// print (date('n/j(D)', strtotime('+2day')));
 ?>
 </pre>
 </main>
