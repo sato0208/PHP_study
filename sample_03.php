@@ -23,7 +23,7 @@
 // タイムゾーンを東京標準に設定する
 date_default_timezone_set('Asia/Tokyo');
 // 日付を画面に表示する
-print(date('G時 i分 s秒'));
+print('現在は' . date('G時 i分 s秒') .'です');
 ?>
 </pre>
 </main>
