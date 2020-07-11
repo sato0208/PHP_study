@@ -19,7 +19,8 @@
 <h2>Practice</h2>
 <pre>
 <?php
-
+$ = i
+print($i);
 ?>
 </pre>
 </main>
