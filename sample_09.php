@@ -1,4 +1,4 @@
-[<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
 <!-- Required meta tags -->
@@ -12,17 +12,26 @@
 </head>
 <body>
 <header>
-<h1 class="font-weight-normal">PHP</h1>
+<h1 class="font-weight-normal">PHP</h1>    
 </header>
 
 <main>
 <h2>Practice</h2>
 <pre>
 <?php
-print('PHPを勉強中です！');
-print('いえい！');
+$fruits = [
+          'apple' => 'りんご',
+          'grape' => 'ぶどう',
+          'lemon' => 'レモン',
+          'tomato' => 'トマト',
+          'peach' => 'もも'
+];
+print ($fruits['lemon']);
+// foreach($fruits as $val){
+//   print($val . "\n");
+}
 ?>
 </pre>
 </main>
 </body>
-</html>]
+</html>
