@@ -19,18 +19,22 @@
 <h2>Practice</h2>
 <pre>
 <?php
-// タイムゾーンを東京標準に設定する
-date_default_timezone_set('Asia/Tokyo');
-print(date('G'));
+// // タイムゾーンを東京標準に設定する
+// date_default_timezone_set('Asia/Tokyo');
+// print(date('G'));
 
-// 9時開店のお店なのでそれ以前は「受付時間外」と表示させる
-if (date('G') < 9){
-print('※ 現在受付時間外です');
-} else {
-  print('ようこそ');
+$x = 'あいうえお';
+if($x){
+  print('xには文字が入っています');
 }
 
-// if (date('G') >= 9){
+// 9時開店のお店なのでそれ以前は「受付時間外」と表示させる
+// if (date('G') < 9){
+// print('※ 現在受付時間外です');
+// } else {
+//   print('ようこそ');
+// }
+// // if (date('G') >= 9){
 //   print('ようこそ');
 // }
 ?>
