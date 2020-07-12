@@ -27,8 +27,8 @@ $fruits = [
           'peach' => 'もも'
 ];
 // print ($fruits['lemon']);
-foreach($fruits as $val){
-  print($val . "\n");
+foreach($fruits as $english => $japanese){
+  print($english . ":" . $japanese . "\n");
 }
 ?>
 </pre>
