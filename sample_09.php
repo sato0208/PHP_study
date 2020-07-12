@@ -26,9 +26,9 @@ $fruits = [
           'tomato' => 'トマト',
           'peach' => 'もも'
 ];
-print ($fruits['lemon']);
-// foreach($fruits as $val){
-//   print($val . "\n");
+// print ($fruits['lemon']);
+foreach($fruits as $val){
+  print($val . "\n");
 }
 ?>
 </pre>
