@@ -21,8 +21,11 @@
 <pre>
 <?php
 // ドキュメントルートを用いてファイルに書き込まれている情報を書き出す
-$news = file_get_contents('../../news_data/news.text');
-  print ($news)
+// $news = file_get_contents('../../news_data/news.text');
+//   print ($news)
+// 読み込んだデータを再加工しない場合はreadfileを使用する
+readfile('../../news_data/news.text');
+
 ?>
 </pre>
 </main>
