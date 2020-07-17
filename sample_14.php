@@ -24,8 +24,10 @@
 // $news = file_get_contents('../../news_data/news.text');
 //   print ($news)
 // 読み込んだデータを再加工しない場合はreadfileを使用する
-readfile('../../news_data/news.text');
-
+$news = file_get_contents('../../news_data/news.text');
+$news = "2020-7-18 ニュースを追加しました\n" . $news;
+file_put_contents('../../news_data/news.text',$news);
+print($news);
 ?>
 </pre>
 </main>
