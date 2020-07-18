@@ -20,12 +20,14 @@
 <h2>Practice</h2>
 <pre>
 <?php
-$file = simplexml_get_file('https://h2o-space.com/feed/json');
+$file = simplexml_get_file('https://h2o-space.com/feed/json/');
 $json = json_decode($file);
 
-foreach ($json -> item as $item):
+foreach ($json -> items as $item):
 ?>
-・<a href="<?php print($item -> url); ?>"><?php print
+
+・<a href="<?php print($item -> url); ?>">
+<?php print
 ($item -> title); ?></a>
 <?php
 endforeach;
