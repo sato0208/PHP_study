@@ -18,14 +18,10 @@
 
 <main>
 <h2>Practice</h2>
-
-<pre>
-<?php
-// 保存時に使用したキーを使用する
-print($_COOKIE['save_message']);
-?>
-</table>
-</pre>
+  <pre>
+    変数の値: <?php print($value); ?>
+    Cookieの値: <?php print($_COOKIE['save_message']); ?>
+  </pre>
 </main>
 </body>
 </html>
