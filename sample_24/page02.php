@@ -1,8 +1,3 @@
-<!-- Cookieに値を保存する -->
-<?php
-setcookie('save_message', 'cookieに保存した値です', time() + 60 * 60 * 24 * 14);
-?>
-
 <!doctype html>
 <html lang="ja">
 <head>
@@ -25,7 +20,11 @@ setcookie('save_message', 'cookieに保存した値です', time() + 60 * 60 * 2
 <h2>Practice</h2>
 
 <pre>
-  <a href="page02.php">page02へ</a>
+<?php
+// 保存時に使用したキーを使用する
+print($_COOKIE['save_message']);
+?>
+</table>
 </pre>
 </main>
 </body>
