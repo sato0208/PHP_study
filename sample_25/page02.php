@@ -1,7 +1,6 @@
 <?php
 // セッションを使用するための宣言
 session_start();
-$_SESSION['session_message'] = "値をセッションに保存しました"
 ?>
 <!doctype html>
 <html lang="ja">
@@ -24,8 +23,9 @@ $_SESSION['session_message'] = "値をセッションに保存しました"
 <main>
 <h2>Practice</h2>
 <pre>
-  <p>セッションに値を保存しました。次のページに移動しましょう</p>
-  &raquo; <a href="page02.php">page02へ</a>
+<?php
+print($_SESSION['session_message']);
+?>
 </pre>
 </main>
 </body>
